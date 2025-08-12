@@ -1,1 +1,1 @@
-# sign-up-form
+This is a project for The Odin Project where the objective is to create a sign-up form website. This project demonstrates a grasp of intermediate HTML and CSS design.
