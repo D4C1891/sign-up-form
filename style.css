@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Odin';
+    src: url('.//fonts/Norse-Bold.otf');
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.logoSection {
+    background-image: url(.//images/photo-1585202900225-6d3ac20a6962.avif);
+    background-repeat: no-repeat;
+    background-size: cover; /* scales so it covers full height/width */
+    background-position: center; /* centers the image */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 600px;
+}
+
+img {
+    width: 100px;
+}
+
+.logoSidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    font-size: 48px;
+    width: 100%;
+    margin-top: 200px;
+}
+
+h1 {
+    font-family: 'Odin', sans-serif;
+    color: white;
+}
+
+a {
+    color: inherit;
+}
+
+footer {
+    color: white;
+}
+
+.formSection {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex: 1;
+}
+
+.headerText {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 32px;
+    height: 27.3vh;
+    padding: 32px;
+    background-color: gainsboro;
+}
+
+.text {
+    max-width: 850px;
+    font-weight: 500;
+}
+
+fieldset {
+    border: 1px solid #ddd; 
+    border-radius: 6px;     
+    padding: 20px;          
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group-wrapper {
+    display: flex;
+    padding: 20px;
+    gap: 32px;
+}
+
+.legend {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 16px;
+}
+
+.formColumn1 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.formColumn2 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
