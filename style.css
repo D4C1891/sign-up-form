@@ -3,14 +3,21 @@
     src: url('.//fonts/Norse-Bold.otf');
 }
 
+input, textarea, select, button {
+    font-family: inherit;
+}
+
 body {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    background-color: #E5E7EB;;
     min-height: 100vh;
     width: 100vw;
     margin: 0;
     padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .container {
@@ -71,7 +78,7 @@ footer {
     font-size: 32px;
     height: 27.3vh;
     padding: 32px;
-    background-color: gainsboro;
+    background-color: #E5E7EB;
 }
 
 .text {
@@ -79,34 +86,97 @@ footer {
     font-weight: 500;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
 fieldset {
     border: 1px solid #ddd; 
     border-radius: 6px;     
-    padding: 20px;          
+    padding: 32px;          
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .form-group-wrapper {
     display: flex;
-    padding: 20px;
     gap: 32px;
 }
 
 .legend {
     font-size: 32px;
     font-weight: bold;
-    padding: 16px;
+}
+
+input {
+    font-size: 18px;
 }
 
 .formColumn1 {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 16px;
+    width: 300px;
+    padding: 5px 10px;;
 }
 
 .formColumn2 {
     display: flex;
     flex-direction: column;
+    gap: 16px;
+    width: 300px;
+    padding: 5px 10px;
+}
+
+input {
+    border: solid 1px #E5E7EB;
+    border-radius: 4px;
+}
+
+input[type = "text"]:focus {
+    outline: 2px solid lightskyblue;
+}
+
+input[type = "email"]:focus {
+    outline: 2px solid lightskyblue;
+}
+
+input[type = "password"]:focus {
+    outline: 2px solid lightskyblue;
+}
+
+input[type = "tel"]:focus {
+    outline: 2px solid lightskyblue;
+}
+
+.submitButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
     gap: 32px;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 18px;
+    width: 240px;
+    font-weight: bold;
+}
+
+.submitText {
+    font-size: 18px;
+}
+
+.login {
+    color: #596D48;
+    font-weight: bold;
 }
